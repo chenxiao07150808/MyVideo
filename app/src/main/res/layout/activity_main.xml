@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频播放器"
+        android:textSize="22dp"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        />
+  <SurfaceView
+      android:layout_width="match_parent"
+      android:layout_height="440dp"
+      android:id="@+id/surfaceview"
+      >
+
+  </SurfaceView >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pause"
+            android:id="@+id/pause"
+            android:layout_marginLeft="20dp"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play"
+            android:id="@+id/play"
+            android:layout_marginLeft="20dp"
+            />
+         <ImageButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/reset"
+             android:id="@+id/reset"
+             android:layout_marginLeft="25dp"
+             />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stop"
+            android:id="@+id/stop"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
